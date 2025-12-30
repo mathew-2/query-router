@@ -23,11 +23,16 @@ ollama serve
 ollama pull llama3.2
 ```
 
-### 3. Install Dependencies
+### 3. Install Dependencies and Configure Environment (Conda)
 
 ```bash
-python -m venv venv
-source venv/bin/activate
+# Create a new conda environment
+conda create -n query-router python=3.10 -y
+
+# Activate the environment
+conda activate query-router
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -35,6 +40,13 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
+```
+.env.example
+
+```bash
+# Ollama configuration (local LLM)
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=llama3.2
 ```
 
 ## Usage
