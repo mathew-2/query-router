@@ -14,9 +14,6 @@ A simple query router that uses LangChain + Ollama to route user questions to th
 ```bash
 # macOS
 brew install ollama
-
-# Linux
-curl -fsSL https://ollama.com/install.sh | sh
 ```
 
 ### 2. Start Ollama & Pull Model
