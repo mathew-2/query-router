@@ -1,0 +1,6 @@
+router
+requests
+ollama
+python-dotenv
+langchain_ollama
+langchain_core
