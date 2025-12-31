@@ -41,6 +41,7 @@ pip install -r requirements.txt
 ```bash
 cp .env.example .env
 ```
+
 .env.example
 
 ```bash
@@ -51,11 +52,21 @@ OLLAMA_MODEL=llama3.2
 
 ## Usage
 
+### CLI
+
 ```bash
 python main.py
 ```
 
-### Example
+### Streamlit Web UI
+
+```bash
+streamlit run app.py
+```
+
+Opens at http://localhost:8501
+
+## Example
 
 ```
 You: Show my open pull requests
